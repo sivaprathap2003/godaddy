@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>go dady</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            background-color:black;
+            height: 80px;
+            width: 100%;
+        }
+        .a1{
+            background-image: url(Godaddy-logo-removebg-preview.png);
+            background-size: 10% 50px;
+            background-repeat: no-repeat;
+            margin-top:20px;
+            margin-left: 10px;
+        }
+        ul{
+            display: flex;
+            margin-left: 20px;
+            
+        }
+        li{
+            color: white;
+            margin-left:100px;
+            list-style-type: none;
+          font-size: small;
+        }
+        .singimg{
+            display:grid;
+            grid-template-columns: 70% 25%;
+            justify-content: center;
+            
+        
+            
+        }
+        .child2{
+            height: 400px;
+            width: 70%;
+            margin-top: 10%;
+            background-image: url(sing.jpeg);
+            border-radius: 30px;
+            background-repeat: no-repeat;
+            background-size: 100% 400px;
+            
+        }
+        .child3{
+            height:400px;
+            margin-top: 28%;
+            background-color:gray;
+            border-radius: 20px;
+            
+        
+        }
+        .h1{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 3%;
+        }       
+        h1{
+            margin-left:30%;
+        }  
+        .a{
+            text-align: center;
+            font-size: 30px;
+        }
+        .aa1{
+            text-align: center;
+        }
+        .h2{
+           margin-left: 40%;
+           height: 30px;
+           background-color: black;
+           color: white;
+           border-radius: 40px;
+        }
+        .h2:hover{
+            background-color: white;
+            color: black;
+        }
+        .h3{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 10%;
+            margin-right:200px;
+        }
+        .h4{
+            height: 600px;
+            width: 97%;
+            display: grid;
+            grid-template-columns:repeat(2,50%);
+            grid-template-rows: repeat(2,50%);
+            justify-content: space-around;
+            gap: 10px;
+            margin-left: 10px;
+            
+        }
+        .t1{
+            grid-area: div1;
+            background-image: url(griddiv1.webp);
+            background-size: 95% 700px;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+        }
+        .t1 h1{
+            margin: 0;
+            margin-top: 400px;
+        }
+        .t1 input{
+            background-color: black;
+            color: white;
+        }
+        
+        .t2{
+            grid-area: div2;
+            background-image: url(div2.webp);
+            background-size: 97% 400px;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+        }
+        .t2 h4{
+            margin-top: 80px;
+            margin-left: 40px;
+        }
+        .input2{
+            background-color: black;
+            color: white;
+            margin-left: 30px;
+        }
+        .t3{
+            grid-area: div3;
+            background-image: url(div3.webp);
+            background-size: 97% 400px;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            
+        }
+        .t3 h2{
+            margin-top: 140px;
+            margin-left: 30px;
+        }
+        .t3 p{
+            margin-left: 30px
+        }
+        .input3{
+            background-color: black;
+            color: white;
+            margin-left: 30px;
+        }
+        .h4{
+            grid-template-areas: 'div1 div2'
+            'div1 div3';
+        }
+        .image1 img{
+            height: 400px;
+            width:85%;
+            margin-top: 30px;
+            margin-left: 90px;
+            border-radius:30px;
+        }
+        .p1{
+            display: flex;
+            background-size:98% 250px;
+    
+            
+        }
+        .s1{
+            height:300px;
+            width: 35%;
+            
+        }
+        .s1 h2{
+            margin-left: 40px;
+            
+        }
+        .s1 p{
+            margin-left:35px;
+        }
+        .s2{
+            margin-left:30px;
+        }
+        .s3{
+            margin-left:30px;
+        }
+        .in4{
+            background-color: black;
+            color: white;
+            margin-left: 50%;
+            margin-bottom: 10%;
+            height: 20px;
+            width: 10%;
+            border-radius:3px;
+        }
+        .bigparent{
+            background-color:whitesmoke;
+            border-radius: 40px;
+            height:600px;
+            width:100%;
+            padding-top: 30px;
+        }
+        .bigparent img{
+            height: 400px;
+            width: 80%;
+            margin-top: 50px;
+            margin-left:105px;
+            border-radius: 10px;
+        }
+        .s20 b{
+            margin-left:30%;
+        }
+        .input6{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            margin-left:40%;
+            margin-top: 10px;
+        }
+        .h22{
+            margin-top:60px;
+            margin-left: 40px;
+        }         
+        .camera{
+            width:96%;
+            height: 600px;
+            background-image: url(WhatsApp\ Image\ 2024-09-01\ at\ 10.17.59\ PM.jpeg);
+            background-size:100%  600px;
+            background-repeat: no-repeat;
+            margin-left: 40px;
+            border-radius: 20px;
+        }
+        .white{
+            width:50%;
+            height:500px;
+            background-color: white;
+            background-size: 50% 500px;
+            float: right;
+            margin-right:80px;
+            margin-top: 50px;
+            border-radius: 10px;
+            
+        }
+        .font{
+            font-size: 30px;
+            padding: 40px;
+            
+        }
+        .w img{
+            width: 50%;
+            height:200px;
+            float: right;
+            margin-right: 30px;
+            border-radius:10px;
+        }
+        .p1{
+            margin-left:20px;
+        }
+        .font1{
+            margin-left: 50px;
+            margin-top:60px;
+            
+        }
+        .gparent{
+            width: 100%;
+            height: 600px;
+            background-size: 100% 600px;
+            background-color: brown;
+            display: flex;
+
+        }
+        .text1{
+            background-color:white;
+            width: 30%;
+            height: 500px;
+            border-radius: 10px;
+            
+            margin-top: 80px;
+            margin-left: 30px;
+        }
+        .u{
+            margin-top: 50px;
+           
+            height: 200px;
+            
+        }
+        .m{
+          font-size: small;
+          margin-left: 85px;
+        }
+        .m1{
+            font-size: 30px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .m2{
+            background-color:white;
+            width: 30%;
+            height: 500px;
+            border-radius: 10px;
+            
+            margin-top: 80px;
+            margin-left: 30px;
+        }
+        .m2 p{
+            margin-left: 40px;
+            margin-top: 30px;
+
+        }
+        .cl{
+            font-size: 30px;
+            margin-left: 40px;
+            margin-top: 30px;
+          
+        }
+        .white1{
+            background-color:white;
+            width: 30%;
+            height: 500px;
+            border-radius: 10px;
+            
+            margin-top: 80px;
+            margin-left: 30px;
+        }
+        .text2 p{
+            margin-left: 40px;
+            margin-top: 30px;
+
+        }
+        .text3{
+            font-size: 30px;
+            margin-left: 40px;
+            margin-top: 30px;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="a1">
+            <nav>
+        
+        <ul>
+            
+            <li>domain</li>
+            <li>wepsites and hosting</li>
+            <li>email</li>
+            <li>ssl certificates</li>
+            <li>marketting</li>
+            <li>contact</li>
+            <li>help</li>
+            <li>sign</li>
+              
+        </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="singimg">
+        <div class="child2">
+         
+        </div>
+        <div class="child3">
+            <h1 class="h1">web hosting</h1>
+            <p class="a">secured hosting</p>
+            <p class="a">from $</p>
+            <p class="a">199.00</p>
+            <p class="aa1">improve page load and SEO<br>24  7 network security<br>
+            30 days money back garuntee</p>
+            <input type="button" value="learn more" class="h2">
+        </div>
+    </div>
+    <div>
+        <h1 class="h3">Whats First Your Bussiness</h1>
+    </div>
+    <div class="h4"> 
+      <div class="t1"><h1>Domains</h1>
+        <p>Get started with the perfect domain,which comes<br>with free domain privacy protction forever.</p>
+        <input type="button" value="Search Domains" class="input">   
+    </div>
+      <div class="t2"><h4>.co for $1.00/1st year<br>Ensure your company website<br>standout with a.co domain.3-yaer<br>purchase required.additional year(s)<br>$3299.00</h4>
+      <input type="button" value="find your domain" class="input2">
+    </div>
+      <div class="t3"><h2>in $1.00/1st year</h2><p>boost your local impact with our<br>localized top level domains</p>
+        <input type="button" value="get started" class="input3">
+        </div>
+    </div>
+    <h1 class="class text-center">Grow Your Brand With Websites+Marketting</h1>
+    <div class="image1">
+       
+           <img src="https://img1.wsimg.com/cdnassets/transform/305e0fdd-0043-42cd-851e-5a6a00df7576/intl-img-bl-prod-feature-engage-with-marketing-desktop">
+       </div>
+    </div>
+    <div class="p1">
+         <div class="s1"><h2>Get online fast.No design</h2><p><b><br>Skills needed.<br>Build in your sight in minutes.Choose from 100s of<br>beautiful mobile templates with our website builder.Many with e commerce features</b></p></div>
+         <div class="s2"><h2>Build trust with e-mail that<br><b>That matches your domain</h2><p>Help boost your crediblity with customer with<br>free professional e-mail thats identical to your<br>domain name</p></b></div>         
+         <div class="s3"><h2>Engage with marketting tools</h2><p><b>help your audience find you with build in seo and promote<br>your bussiness with social media and e-mail marketting tools.</b></p></div>        
+        </div>   
+        <div>
+            <input type="button" value="start for free" class="in4">
+         </div>
+         <div class="bigparent">
+            <div class="s20">
+            <h1>Templates designed to sell.</h1>
+            <b>Choose from 100s of designs for every idea for industry</b>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj5BDDptBGa8RLh4Yp-pEdeQEpJpP34ST5Xg&s">
+            <input type="button" value="Browse all Templates" class="input6">
+        </div>
+        <div class="h22">
+            <h2 style="font-size:50px;">Onward and upward with<br>Our customer.</h2>
+        </div> 
+        <div class="camera">
+            <div class="white">
+            <div class="font"><b>“GoDaddy's Website Builder is super<br>convenient for somebody who has an<br>idea of what they're trying to create,<br>but might not have any technical<br>skills.”</b></div>
+            <div class="w img"><img src="WhatsApp Image 2024-09-01 at 10.17.58 PM.jpeg"></div>
+            <div>products used by<br><b>Roletape</b></div>    
+        </div>
+        </div>
+        <div class="font1">
+            <b style="font-size:40px;">Trusted by 20+Million<br>Customers around the world</b>   
+        </div>
+        <div class="gparent">
+              <div class="text1">
+                <div class="u" >
+             <h1 class="m">THE SUPPORT PERSON HAVE GOOD KNOWLEDGE...</h1>
+              <b><p class="m1">The support personhave good<br>Knowledge and help with good<br>Suggestion on improving my<br>Setting that is extrodinary</p></b>
+            </div>  
+            </div>
+              <div class="m2">
+                <p>10 ON 10 CUSTOMER SUPPORTER.</p>
+                <div class="cl">
+                    <b>The support provided by<br>GO Daddy is the best in the<br>industry with knowledgeble<br>customer agent and the best<br>rates upfront over the call</b>
+                </div>
+                </div>
+              <div class="white1">
+                <div class="text2">
+                    <p>GOOD COMMUNICATION SKILL BY SUPPORT<br>ASSISTANT</p>
+                    <div class="text3">
+                    <b>Great product and service<br>customer support assistance<br>from go daddy support team</b>
+                    </div>
+                </div>
+              </div>
+        </div>
+       
+</body>
+</html>
